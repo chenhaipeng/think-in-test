@@ -1,5 +1,9 @@
-package com.think;
+package com.think.powermock;
 
+import com.think.powermock.EmployeeDao;
+import com.think.powermock.EmployeeService;
+import com.think.powermock.EmployeeService2;
+import com.think.powermock.EmployeeUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.api.mockito.PowerMockito;
@@ -15,7 +19,7 @@ import static org.junit.Assert.fail;
  * @date 2017/08/14 18:20
  */
 @RunWith(PowerMockRunner.class)
-@PrepareForTest({EmployeeService2.class})
+@PrepareForTest({EmployeeUtils.class,EmployeeService.class,EmployeeDao.class})
 public class EmployeeService2Test {
 
     @Test

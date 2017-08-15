@@ -1,4 +1,4 @@
-package com.think;
+package com.think.powermock;
 
 /**
  * @author chenhaipeng
